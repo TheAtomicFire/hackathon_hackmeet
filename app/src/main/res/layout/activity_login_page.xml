@@ -35,16 +35,16 @@
         android:layout_marginEnd="98dp"
         android:layout_marginBottom="533dp"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="text"
         android:minHeight="48dp"
         android:password="false"
         android:text="Username"
-        android:textColor="#967D69"
+        android:textColor="#F2F79E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -55,16 +55,16 @@
         android:layout_marginEnd="98dp"
         android:layout_marginBottom="488dp"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:password="true"
         android:text="Password"
-        android:textColor="#967D69"
+        android:textColor="#F2F79E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
@@ -74,8 +74,9 @@
         android:layout_marginTop="406dp"
         android:layout_marginEnd="205dp"
         android:layout_marginBottom="389dp"
+        android:backgroundTint="#F2F79E"
         android:text="Login"
-        android:textColor="#A8D48D"
+        android:textColor="#456990"
         app:iconTint="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,8 +91,9 @@
         android:layout_marginTop="358dp"
         android:layout_marginEnd="184dp"
         android:layout_marginBottom="440dp"
+        android:buttonTint="#F2F79E"
         android:text="Remember Me"
-        android:textColor="#967D69"
+        android:textColor="#F2F79E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
