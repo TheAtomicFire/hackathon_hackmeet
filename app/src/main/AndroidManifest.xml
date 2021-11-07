@@ -4,12 +4,16 @@
 
     <application
         android:allowBackup="true"
-        android:fullBackupOnly="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hackathon_hackmeet">
+        <activity
+            android:name=".Exit"
+            android:exported="false"
+            android:label="@string/title_activity_exit"
+            android:theme="@style/Theme.Hackathon_hackmeet.NoActionBar" />
         <activity
             android:name=".hackathonDashboard"
             android:exported="false" />
@@ -21,16 +25,10 @@
             android:exported="false" />
         <activity
             android:name=".describeYourself"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            </activity>
+            android:exported="false" />
         <activity
             android:name=".signUpForm"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".profilePage"
             android:exported="false" />
@@ -42,7 +40,12 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <meta-data
