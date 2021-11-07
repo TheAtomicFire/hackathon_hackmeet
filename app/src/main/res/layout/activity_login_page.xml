@@ -6,4 +6,99 @@
     android:layout_height="match_parent"
     tools:context=".login_page">
 
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="193dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="183dp"
+        android:fontFamily="@font/rancho"
+        android:scaleX="5"
+        android:scaleY="5"
+        android:text="Log in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_username2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="273dp"
+        android:layout_marginEnd="273dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/rancho"
+        android:scaleX="4"
+        android:scaleY="4"
+        android:text="Username"
+        app:layout_constraintBottom_toTopOf="@+id/txtbox_username2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_password2_actual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="273dp"
+        android:fontFamily="@font/rancho"
+        android:scaleX="4"
+        android:scaleY="4"
+        android:text="Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtbox_username2" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#F2F79E"
+        android:fontFamily="@font/rancho"
+        android:text="Login"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtbox_username2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="107dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_username2" />
+
+    <EditText
+        android:id="@+id/txtbox_password2_actual"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="117dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName|textPassword"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_password2_actual" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

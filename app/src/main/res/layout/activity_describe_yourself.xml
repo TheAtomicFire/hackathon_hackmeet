@@ -3,6 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+
+    android:background="#456990"
     android:layout_height="match_parent"
     tools:context=".describeYourself">
 
@@ -15,6 +17,8 @@
         android:layout_marginEnd="171dp"
         android:scaleX="2"
         android:scaleY="2"
+        android:fontFamily="@font/rancho"
+        android:textColor="#F2F79E"
         android:text="Tech Stack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,6 +31,8 @@
         android:layout_marginStart="128dp"
         android:layout_marginTop="74dp"
         android:layout_marginEnd="125dp"
+        android:fontFamily="@font/rancho"
+        android:textColor="#F2F79E"
         android:scaleX="2"
         android:scaleY="2"
         android:text="Programming Experience"
@@ -40,7 +46,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="135dp"
         android:layout_marginTop="80dp"
+        android:fontFamily="@font/rancho"
+        android:textColor="#F2F79E"
         android:layout_marginEnd="136dp"
+        android:scaleX="2"
         android:scaleY="2"
         android:text="Hackathon Experience"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,6 +63,8 @@
         android:layout_marginStart="191dp"
         android:layout_marginTop="69dp"
         android:layout_marginEnd="192dp"
+        android:fontFamily="@font/rancho"
+        android:textColor="#F2F79E"
         android:layout_marginBottom="221dp"
         android:scaleX="2"
         android:scaleY="2"
@@ -63,17 +74,88 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_3" />
 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="409dp"
+    <EditText
+        android:id="@+id/txt_hack_1"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/text_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_hack_2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_2" />
+
+    <EditText
+        android:id="@+id/txt_hack_3"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_3" />
+
+    <EditText
+        android:id="@+id/txt_hack_4"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_4" />
+
+    <TextView
+        android:id="@+id/describe"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="1dp"
-        android:contentDescription="asdasd"
-        android:minHeight="48dp"
-        android:spinnerMode="dropdown"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="144dp"
+        android:scaleX="3"
+        android:fontFamily="@font/rancho"
+        android:textColor="#F2F79E"
+        android:scaleY="3"
+        android:text="Describe Yourself"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/button_continue_hacker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#F2F79E"
+        android:fontFamily="@font/rancho"
+        android:text="COntinue"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
