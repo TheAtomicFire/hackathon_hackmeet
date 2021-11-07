@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.hackathon_hackmeet.model.AuthInfo;
+
 public class signUpForm extends AppCompatActivity {
 
     @Override
@@ -60,6 +62,8 @@ public class signUpForm extends AppCompatActivity {
 
             /* CODE HERE FOR SUBMITTING TO DATABASE */
             //PASSWORD, EMAIL AND USERNAME GOING TO OUR DATABASE
+            AuthInfo authInfo = new AuthInfo();
+            authInfo.setUsername(username_Content);
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         }

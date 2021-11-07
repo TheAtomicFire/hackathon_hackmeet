@@ -12,7 +12,11 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.example.hackathon_hackmeet.DBLogic.HackerInfoOperations;
+import com.example.hackathon_hackmeet.model.HackerInfo;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class describeYourself extends AppCompatActivity {
 
@@ -29,6 +33,24 @@ public class describeYourself extends AppCompatActivity {
         go.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String techStackFull = txt1.getText().toString();
+                ArrayList<String> techStack = new ArrayList<String>(Arrays.asList(techStackFull.split(",")));
+                String progLangFull = txt2.getText().toString();
+                ArrayList<String> progLang = new ArrayList<String>(Arrays.asList(progLangFull.split(",")));
+                int hackExp = Integer.parseInt(txt3.getText().toString());
+                String role = txt4.getText().toString();
+
+                HackerInfo hackerInfo = new HackerInfo();
+                hackerInfo.setHackerId("S80807756");
+                hackerInfo.setFullName("Pine Apple");
+                hackerInfo.setEmail("pineapple@basket.com");
+                hackerInfo.setTechStack(techStack);
+                hackerInfo.setProgLang(progLang);
+                hackerInfo.setHackExp(hackExp);
+                hackerInfo.setRole(role);
+
+                HackerInfoOperations ops = new HackerInfoOperations();
+                ops.pushDescribeYourself(hackerInfo);
                 /*SEND TEXT DATA */
                 Intent intent = new Intent(getApplicationContext(), listOfHackers.class);
                 startActivity(intent);
